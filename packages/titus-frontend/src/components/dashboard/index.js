@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 import config from '../../config'
@@ -17,7 +17,7 @@ const Dashboard = ({ logout }) => {
   const language = i18n.language
 
   return (
-    <Fragment>
+    <div style={{ marginBottom: 20 }}>
       <select // eslint-disable-line jsx-a11y/no-onchange
         id="language"
         aria-label={`${t('language')}:`}
@@ -46,9 +46,9 @@ const Dashboard = ({ logout }) => {
       >
         {t('docs')}
       </a>
-      {config.aws.identityPoolId && <UserInfo />}
-      {config.aws.identityPoolId && <UserList />}
-    </Fragment>
+      {config.aws.userPoolId && <UserInfo />}
+      {config.aws.userPoolId && <UserList />}
+    </div>
   )
 }
 // {adIdToken && (
