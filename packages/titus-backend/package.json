@@ -58,7 +58,7 @@
     "jsonwebtoken": "^8.5.1",
     "lint-staged": "^10.2.11",
     "nock": "^13.0.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.1.2"
   },
   "lint-staged": {
     "*.js": [
